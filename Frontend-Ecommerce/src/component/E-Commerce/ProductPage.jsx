@@ -5,15 +5,21 @@ import "./ProductPage.css";
 
 const ProductPage = () => {
   return (
-    <div className="product-page">
-      <div className="filters-section">
-        <ProductFilters />
-      </div>
+    <>
+      
 
-      <div className="cards-section">
-        <ProductCard />
+      {/* 👇 Product Layout Section */}
+      <div className="product-page">
+        <div className="filters-section">
+          <ProductFilters />
+        </div>
+
+        <div className="cards-section">
+          <ProductCard />
+          
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

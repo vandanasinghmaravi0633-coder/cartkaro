@@ -49,22 +49,6 @@ function Home(props) {
                     <div className="parent-image">
                     
                         <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2025/GW/BAU/Unrec/PC/934044815._CB551384116_.jpg" alt="" />
-
-                        <div className="mainChildImage">
-                            <div className="child-image">
-                                {/* <img src="https://images.meesho.com/images/marketing/1744722796811.webp" alt="" /> */}
-                            </div>
-                            <div className="child-image">
-                                {/* <img src="https://images.meesho.com/images/marketing/1744635113661.webp" alt="" /> */}
-                            </div>
-                            <div className="child-image">
-                                {/* <img src="https://images.meesho.com/images/marketing/1744635139351.webp" alt="" /> */}
-                            </div>
-                            <div className="child-image">
-                                {/* <img src="https://images.meesho.com/images/marketing/1744635189897.webp" alt="" /> */}
-                            </div>
-
-                        </div>
                     </div>
 
                 </div>
