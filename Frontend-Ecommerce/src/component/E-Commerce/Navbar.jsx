@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink} from 'react-router-dom';
-import './E-Commerce.css'
+import './E-commerce.css'
 function Navbar(props) {
     return (
         <>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-
 import Signup from './component/Signup.jsx';
 import Login from './component/E-Commerce/Login.jsx';
 import Home from './component/E-Commerce/Home.jsx';
@@ -11,10 +10,6 @@ import Footer from './component/E-Commerce/Footer.jsx';
 import ProductPage from "./component/E-Commerce/ProductPage";
 import VerifyUser from "./component/E-Commerce/VerifyUser.jsx"
 import VerifyLoginOtp from './component/E-Commerce/VerifyLoginOtp.jsx';
-
-
-
-
 
 function App() {
   return (

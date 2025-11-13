@@ -18,7 +18,7 @@
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
 /* gap: 20px; */
-}
+/* } */
 
 /* product  filter css */
 /* .sidebar {
@@ -98,7 +98,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 } */
-*/ .product-page {
+ .product-page {
   display: flex;
   align-items: flex-start;
   gap: 20px;
