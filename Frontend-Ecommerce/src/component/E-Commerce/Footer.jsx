@@ -1,5 +1,5 @@
 import React from "react";
-import "./E-Commerce.css";
+import "./E-commerce.css";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 
 

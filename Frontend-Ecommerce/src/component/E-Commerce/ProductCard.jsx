@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import "./E-Commerce.css";
+// import "./E-commerce.css";
 import "./ProductPage.css";
 import axios from 'axios'
 const ProductCard = () => {
