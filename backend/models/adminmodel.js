@@ -7,6 +7,6 @@ let admin = new mongoose.Schema({
   role: { type: String, default: "admin" },
 });
 
-let adminmodel = mongoose.model("admins", admin);
+let adminmodel = mongoose.model("admin", admin);
 
 module.exports = adminmodel;

@@ -21,26 +21,29 @@ let uploadpath = path.join(__dirname, "uploads");
 app.use("/uploads", express.static(uploadpath));
 
 // connect database
- 
+
 connectDb();
 
-let frontendpath = path.join(__dirname,"../Frontend-Ecommerce/dist");
-app.use(express.static(frontendpath));
 
 // routes
 let userRoute = require("./routes/userRoutes.js");
 let adminRoute = require("./routes/adminRoutes.js");
 let productRoute = require("./routes/productRoutes");
 let CartRoute = require("./routes/CartRoutes.js");
- 
+
 
 app.use("/api/admin", adminRoute);
 app.use("/api/user", userRoute);
 app.use("/api/product", productRoute);
 app.use("api/Cart", CartRoute);
 
-let mainfilepath = path.join(__dirname,"../Frontend-Ecommerce/dist/index.html");
-app.use("/",express.static(mainfilepath))
+let frontendpath = path.join(__dirname, "../Frontend-Ecommerce/dist");
+app.use(express.static(frontendpath));
+let mainfilepath = path.resolve(__dirname, "../Frontend-Ecommerce/dist/index.html");
+console.log(mainfilepath)
+app.get("*", (req, res) => {
+  res.sendFile(mainfilepath)
+})
 // error handling
 
 
