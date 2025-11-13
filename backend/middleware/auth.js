@@ -1,7 +1,7 @@
 let jwt = require("jsonwebtoken");
 const connectDB = require("../config/connectDb");
 let { ObjectId } = require("mongodb");
-const Admin = require("../models/adminModel");
+const Admin = require("../models/adminmodel");
 
 let userdb = async () => {
     let db = await connectDB();
