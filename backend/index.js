@@ -27,16 +27,12 @@ connectDb();
 let frontendpath = path.join(__dirname,"../Frontend-Ecommerce/dist");
 app.use(express.static(frontendpath));
 
-
-
-
 // routes
 let userRoute = require("./routes/userRoutes.js");
 let adminRoute = require("./routes/adminRoutes.js");
 let productRoute = require("./routes/productRoutes");
 let CartRoute = require("./routes/CartRoutes.js");
-const { execPath } = require("process");
-
+ 
 
 app.use("/api/admin", adminRoute);
 app.use("/api/user", userRoute);
@@ -46,6 +42,8 @@ app.use("api/Cart", CartRoute);
 let mainfilepath = path.join(__dirname,"../Frontend-Ecommerce/dist/index.html");
 app.use("/",express.static(mainfilepath))
 // error handling
+
+
 app.use((err, req, res, next) => {
   console.log(err);
   res.send({ success: false, message: err.message });
