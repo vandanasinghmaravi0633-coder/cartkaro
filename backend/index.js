@@ -35,7 +35,7 @@ let CartRoute = require("./routes/CartRoutes.js");
 app.use("/api/admin", adminRoute);
 app.use("/api/user", userRoute);
 app.use("/api/product", productRoute);
-app.use("api/Cart", CartRoute);
+app.use("/api/Cart", CartRoute);
 
 let frontendpath = path.join(__dirname, "../Frontend-Ecommerce/dist");
 app.use(express.static(frontendpath));
