@@ -21,7 +21,7 @@ let uploadpath = path.join(__dirname, "uploads");
 app.use("/uploads", express.static(uploadpath));
 
 // connect database
-
+ 
 connectDb();
 
 let frontendpath = path.join(__dirname,"../Frontend-Ecommerce/dist");
